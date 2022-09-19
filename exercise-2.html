@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Whack a mole</title>
+    <link rel="stylesheet" href="./styles/exercise-2.css">
+    <script src="./scripts/exercise-2.js" defer></script>
+
+  </head>
+  <body>
+    <main>
+      <div class="right">
+        <!-- <h1>Whack a mole!</h1> -->
+
+        <h2>Tu puntuación:</h2>
+        <h2  class ="score" data-function="score">0</h2>
+
+        <h2>Tiempo:</h2>
+         <h2 class ="timeOut" data-function="time-left">30</h2>
+         <p>Como ves, vamos a tener un contador y a nuestro escurridizo Diglett **moviendose cada 0.5 segundos a una casilla
+          aleatoria hasta que finaliza el contador**. La intención del usuario es conseguir hacer click en la imagen de Diglett
+           cuantas más veces posibles hasta que finalice el contador y **registrar cada click efectivo como un punto en el score**
+           Una vez que esto ocurra mostraremos una alerta al
+            usuario con la puntuación obtenida.</p>
+            <button class="btn" onclick="startGame()",>Empezar</button>
+            <a class="btn" href="./index.html">
+              Volver al Home
+            </a> 
+      </div>
+      <div class="b-grid">
+        <div data-function="square" class="b-square"></div>
+        <div data-function="square" class="b-square"></div>
+        <div data-function="square" class="b-square"></div>
+        <div data-function="square" class="b-square"></div>
+        <div data-function="square" class="b-square"></div>
+        <div data-function="square" class="b-square"></div>
+        <div data-function="square" class="b-square"></div>
+        <div data-function="square" class="b-square"></div>
+        <div data-function="square" class="b-square"></div>
+      </div>
+    </main>
+
+  </body>
+</html>
